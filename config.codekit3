@@ -9,59 +9,19 @@
 	],
 "creatorBuild": "25504",
 "files": {
-	"\/.gitattributes": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.gitattributes",
-		"oF": 0
-		},
 	"\/.gitignore": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
-	"\/CHANGELOG.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/CHANGELOG.html",
-		"oF": 0
-		},
-	"\/CHANGELOG.md": {
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/CHANGELOG.html",
+	"\/_favicon.png": {
+		"ft": 32768,
+		"iS": 823,
+		"oA": 1,
+		"oAP": "\/_favicon.png",
 		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/CONTRIBUTING.md": {
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/CONTRIBUTING.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
+		"opt": 0
 		},
 	"\/css\/github-markdown.css": {
 		"aP": 1,
@@ -603,6 +563,24 @@
 		"oAP": "\/functions.php",
 		"oF": 0
 		},
+	"\/Gisa-Logo-Black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/Gisa-Logo-Black.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/image.jpg": {
+		"ft": 16384,
+		"iS": 27399,
+		"oA": 0,
+		"oAP": "\/images\/image.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/navicon.png": {
 		"ft": 32768,
 		"iS": 204,
@@ -635,10 +613,19 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/LICENSE.txt": {
+	"\/js\/sg-scripts.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/sg-scripts-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/LICENSE": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/LICENSE.txt",
+		"oAP": "\/LICENSE",
 		"oF": 0
 		},
 	"\/markup\/Basis\/address.html": {
@@ -803,12 +790,6 @@
 		"oAP": "\/Parsedown.php",
 		"oF": 0
 		},
-	"\/README.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/README.html",
-		"oF": 0
-		},
 	"\/README.md": {
 		"cS": 0,
 		"eF": 1,
@@ -924,7 +905,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 507128580,
-	"displayValue": "Style-Guide-Boilerplate",
+	"displayValue": "Gisa-Styleguide",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-gavin"
 	},

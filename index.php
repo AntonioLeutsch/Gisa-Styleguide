@@ -5,7 +5,10 @@
 <meta charset="utf-8">
   <title>GISA Styleguide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#003399">
+
+  <link rel="shortcut icon" href="/_favicon.png">
+  <link rel="icon" type="image/png" href="/_favicon.png" sizes="32x32">
 
   <!-- Style Guide Boilerplate Styles -->
   <!-- <link rel="stylesheet" href="css/gisa-style.css"> -->
@@ -46,9 +49,18 @@
         <li>
           <a href="#gisa-fontStacks">Fonts</a>
         </li>
+        <li>
+          <a href="#gisa-headlineStacks">Headlines</a>
+        </li>
+        <li>
+          <a href="#gisa-hrStacks">Trennlinien</a>
+        </li>
+        <li>
+          <a href="#gisa-imageStacks">Bilder</a>
+        </li>
       </ul>
 
-      <?php listFilesInFolder('markup'); ?>
+      <?php //listFilesInFolder('markup'); ?>
     </div><!--/.gisa-sidebar-->
 
     <div id="main" class="gisa-main" role="main">
@@ -70,41 +82,26 @@
                 <div class="gisa-color-value">#003399</div>
               </div>
               <div class="gisa-color">
-                <div class="gisa-color-swatch" style="background-color: #2ecc71;"></div>
-                <div class="gisa-color-name">Emerald</div>
-                <div class="gisa-color-value">#2ecc71</div>
+                <div class="gisa-color-swatch" style="background-color: #81ADDF;"></div>
+                <div class="gisa-color-name">GSIA Hellblau</div>
+                <div class="gisa-color-value">#81ADDF</div>
               </div>
               <div class="gisa-color">
-                <div class="gisa-color-swatch" style="background-color: #3498db;"></div>
-                <div class="gisa-color-name">Peter River</div>
-                <div class="gisa-color-value">#3498db</div>
+                <div class="gisa-color-swatch" style="background-color: #FF0000;"></div>
+                <div class="gisa-color-name">GISA Rot</div>
+                <div class="gisa-color-value">#FF0000</div>
               </div>
               <div class="gisa-color">
-                <div class="gisa-color-swatch" style="background-color: #9b59b6;"></div>
-                <div class="gisa-color-name">Amethyst</div>
-                <div class="gisa-color-value">#9b59b6</div>
+                <div class="gisa-color-swatch" style="background-color: #707173;"></div>
+                <div class="gisa-color-name">Schwarz 70%</div>
+                <div class="gisa-color-value">#707173</div>
               </div>
             </div><!--/.gisa-color-grid-->
             <div class="gisa-color-grid">
               <div class="gisa-color">
-                <div class="gisa-color-swatch" style="background-color: #ecf0f1;"></div>
-                <div class="gisa-color-name">Clouds</div>
-                <div class="gisa-color-value">#ecf0f1</div>
-              </div>
-              <div class="gisa-color">
-                <div class="gisa-color-swatch" style="background-color: #95a5a6;"></div>
-                <div class="gisa-color-name">Silver</div>
-                <div class="gisa-color-value">#95a5a6</div>
-              </div>
-              <div class="gisa-color">
-                <div class="gisa-color-swatch" style="background-color: #697374;"></div>
-                <div class="gisa-color-name">Concrete</div>
-                <div class="gisa-color-value">#697374</div>
-              </div>
-              <div class="gisa-color">
-                <div class="gisa-color-swatch" style="background-color: #111313;"></div>
-                <div class="gisa-color-name">Obsidian</div>
-                <div class="gisa-color-value">#111313</div>
+                <div class="gisa-color-swatch" style="background-color: #3E3D40;"></div>
+                <div class="gisa-color-name">Schwarz 90%</div>
+                <div class="gisa-color-value">#3E3D40</div>
               </div>
             </div><!--/.gisa-color-grid-->
           </div><!--/.gisa-colors-->
@@ -129,9 +126,83 @@
             </dl>
             <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
           </div><!--/.gisa-font-stacks-->
+          <!-- Manually add your fonts here. -->
+          <div class="gisa-font-stacks gisa-section">
+            <h2 id="gisa-headlineStacks" class="gisa-h2">Headlines</h2>
+            <div class="rev-wrapper">
+              <p>
+                Folgende Headlines wurden angelegt, und können Global verwendet werden.</p>
+            </div>
+
+            <dl class="gisa-font-list headlines">
+              <dt>Überschrift 1 (H1): </dt>
+              <dd class="blocks s-gisa-h1">Beispiel Text einer Headline.</dd>
+              <dt>Überschrift 2 (H2): </dt>
+              <dd class="blocks s-gisa-h2">Beispiel Text einer Headline.</dd>
+              <dt>Überschrift 3 (H3): </dt>
+              <dd class="blocks s-gisa-h3">Beispiel Text einer Headline.</dd>
+              <dt>Überschrift 4 (H4): </dt>
+              <dd class="blocks s-gisa-h4">Beispiel Text einer Headline.</dd>
+              <dt>Überschrift 5 (H5): </dt>
+              <dd class="blocks s-gisa-h5">Beispiel Text einer Headline.</dd>
+              <dt>Überschrift 6 (H6): </dt>
+              <dd class="blocks s-gisa-h6">Beispiel Text einer Headline.</dd>
+
+            </dl>
+            <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
+          </div><!--/.gisa-font-stacks-->
+
+          <div class="gisa-font-stacks gisa-section">
+            <h2 id="gisa-hrStacks" class="gisa-h2">Trennlinien</h2>
+            <div class="rev-wrapper">
+              <p>
+                Folgende Trennlinien wurden angelegt, und können Global verwendet werden.</p>
+            </div>
+
+            <dl class="gisa-font-list seperators">
+              <dt>Trennlinie 1 (hr): </dt>
+              <dd class="blocks"><hr class="normal" /></dd>
+
+              <dt>Trennlinie 2 (hr): </dt>
+              <dd class="blocks"><hr class="fullwidth" /></dd>
+
+              <dt>Trennlinie 3 (hr): </dt>
+              <dd class="blocks"><hr class="short" /></dd>
+
+              <dt>Trennlinie + Headline (hr): </dt>
+              <dd class="blocks">
+                <div class="separator_wrapper">
+                  <div class="separator_content">
+                    <span>Trennlinie mit Text</span>
+                  </div>
+                </div>
+              </dd>
+
+            </dl>
+            <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
+          </div><!--/.gisa-font-stacks-->
+
+          <div class="gisa-font-stacks gisa-section">
+            <h2 id="gisa-imageStacks" class="gisa-h2">Bilder</h2>
+            <div class="rev-wrapper">
+              <p>
+                Folgende Bilder Stile wurden angelegt, und können Global verwendet werden.</p>
+            </div>
+
+            <dl class="gisa-font-list images">
+              <dt>Bild (normal)</dt>
+              <dd class="blocks"><img class="responsive" src="images/image.jpg" /></dd>
+              
+              <dt>Bild (rounded)</dt>
+              <dd class="blocks"><img class="responsive rounded" src="images/image.jpg" /></dd>
+
+            </dl>
+            <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
+          </div><!--/.gisa-font-stacks-->
+
         </div><!--/.gisa-info-->
 
-        <?php renderFilesInFolder('markup'); ?>
+        <?php //renderFilesInFolder('markup'); ?>
       </div><!--/.gisa-container-->
     </div><!--/.gisa-main-->
   </div><!--/.gisa-wrapper-->
