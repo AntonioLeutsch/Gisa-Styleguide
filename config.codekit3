@@ -23,6 +23,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/css\/ajax-loader.gif": {
+		"ft": 4194304,
+		"iS": 3208,
+		"oA": 0,
+		"oAP": "\/css\/ajax-loader.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/css\/github-markdown.css": {
 		"aP": 1,
 		"bl": 0,
@@ -30,6 +38,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/github-markdown-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/owl.carousel.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/owl.carousel.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -557,6 +575,34 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/fonts\/ElegantIcons.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/ElegantIcons.eot",
+		"oF": 0
+		},
+	"\/fonts\/ElegantIcons.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/ElegantIcons.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/ElegantIcons.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/ElegantIcons.ttf",
+		"oF": 0
+		},
+	"\/fonts\/ElegantIcons.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/ElegantIcons.woff",
+		"oF": 0
+		},
 	"\/functions.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -589,10 +635,10 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/index.php": {
+	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/index.php",
+		"oAP": "\/index.html",
 		"oF": 0
 		},
 	"\/js\/gisa-scripts-min.js": {
@@ -609,6 +655,42 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/gisa-scripts-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/jquery-3.1.1.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/jquery-3.1.1.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/owl.carousel.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/owl.carousel.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/pace.min-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/pace.min-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/pace.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/pace.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -807,6 +889,19 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/scss\/elegant.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/elegant.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/scss\/imports.scss": {
 		"aP": 0,

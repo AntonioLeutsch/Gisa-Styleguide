@@ -2,9 +2,11 @@
 @import 'variables';
 @import 'mixins';
 @import 'sg';
+@import "elegant";
 
 body {
     font-family: $sans-serif;
+    color: $schwarz;
 }
 
 audio,
@@ -17,44 +19,44 @@ video {
  Colors
 ---------------------------------------------------------------------------- */
 .gisa-color {
+    position: relative;
     padding: 0 0 0.5rem;
     background: white;
-    position: relative;
 
-    &:before,
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      border-radius: .0625rem;
-      will-change: opacity;
-      transition: opacity .2s ease-in;
+    &:after,
+    &:before {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        content: "";
+        transition: opacity 0.2s ease-in;
+        border-radius: 0.0625rem;
+        will-change: opacity;
     }
 
     &:before {
-      opacity: 1;
-      box-shadow: $card-shadow;
+        opacity: 1;
+        box-shadow: $card-shadow;
     }
+
     &:after {
-      opacity: 0;
-      box-shadow: $card-shadow-h;
+        opacity: 0;
+        box-shadow: $card-shadow-h;
     }
 
     &:hover:before {
-      opacity: 0;
+        opacity: 0;
     }
 
     &:hover:after {
-      opacity: 1
+        opacity: 1;
     }
 
-    .gisa-color-swatch {
-    }
+    .gisa-color-swatch {}
 
     .gisa-color-name {
         padding-right: 0.5rem;
@@ -308,7 +310,9 @@ video {
         }
     }
 }
-
+/* -------------------------------------------------------------------------
+ Images
+---------------------------------------------------------------------------- */
 .images {
     .responsive {
         display: block;
@@ -320,4 +324,132 @@ video {
         border-radius: $border-radius;
         @extend .responsive;
     }
+}
+/* -------------------------------------------------------------------------
+ Slider
+---------------------------------------------------------------------------- */
+.owl-carousel {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 45px;
+    height: 45px;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    background: $grau;
+    @include lineHeight(45px);
+    @include fontSize(14px);
+    transition: background ease 0.3s;
+
+    &:hover {
+        background: $schwarz;
+    }
+
+    &.left {
+        left: $navPosition;
+    }
+
+    &.right {
+        right: $navPosition;
+    }
+    @media (max-width: 760px) {
+        width: 30px;
+        height: 30px;
+        @include lineHeight(30px);
+
+        &.left {
+            left: $navPosition-m;
+        }
+
+        &.right {
+            right: $navPosition-m;
+        }
+    }
+}
+/* -------------------------------------------------------------------------
+ PACE
+---------------------------------------------------------------------------- */
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    .pace-progress {
+        background: #fff;
+        position: fixed;
+        z-index: 2000;
+        top: 0;
+        right: 100%;
+        width: 100%;
+        height: 2px;
+    }
+}
+
+.pace-inactive {
+    display: none;
+}
+/* TABS */
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+
+    li {
+        float: left;
+        flex: 0 0 50%;
+
+        @media (max-width: 760px) {
+          flex: 0 0 100%;
+        }
+
+        a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px 0;
+            text-decoration: none;
+            transition: 0.3s;
+            @include fontSize(22px);
+            @include lineHeight(32px);
+            font-weight: 300;
+            color: $grau;
+
+            &:hover {
+                color: $blau;
+            }
+
+            &:active,
+            &:focus,
+            &.active {
+                color: $blau;
+            }
+        }
+    }
+}
+
+.tabcontent {
+    color: $schwarz;
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    animation: fadeEffect 1s;
+    font-weight: 300;
+    @include lineHeight(33px);
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
