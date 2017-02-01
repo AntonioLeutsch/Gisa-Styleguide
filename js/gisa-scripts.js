@@ -94,29 +94,50 @@ var SGB = window.SGB || {};
 }(this, SGB));
 
 
-function scroller() {
+function coolFunctions() {
+  if ($(window).width() <= 1024) {
 
-    var jQuerysidebar   = jQuery("#scroll"),
-        jQuerywindow    = jQuery(window),
-        offset     = jQuerysidebar.offset(),
-        topPadding = 15;
+    // Scroll
+    $('#scroll').trigger('sticky_kit:detach');
 
-    jQuerywindow.scroll(function() {
-        if (jQuerywindow.scrollTop() > offset.top) {
-            jQuerysidebar.stop().animate({
-                marginTop: jQuerywindow.scrollTop() - offset.top + topPadding
-            }, 500);
-        } else {
-            jQuerysidebar.stop().animate({
-                marginTop: 0
-            });
-        }
+    //Menu
+
+
+  } else {
+
+    //Scroll
+    $('#scroll').stick_in_parent();
+
+    //Menu
+    var elm = document.querySelector('#scroll');
+    var ms  = new MenuSpy(elm, {
+      activeClass: 'current-item'
     });
-
+  }
 }
 
+function myAccordion() {
+
+  jQuery('.accordion dt').bind('click', function () {
+    jQuery(this).siblings('dd.active').slideToggle('fast');
+    jQuery(this).parent().find('.active').removeClass('active');
+    jQuery(this).addClass('active');
+    jQuery(this).next('dd').slideToggle('fast').addClass('active');
+
+    // Toggle Icon
+    jQuery(this).find('i').removeClass('icon_plus_alt2');
+    jQuery(this).find('i').addClass('icon_minus_alt');
+    jQuery(this).parent().find('dt').not('.active').find('i').removeClass('icon_minus_alt');
+    jQuery(this).parent().find('dt').not('.active').find('i').addClass('icon_plus_alt2');
+
+  });
+  jQuery('.accordion #open').click();
+}
+
+
 jQuery(document).ready(function() {
-  scroller();
+  myAccordion();
+  coolFunctions();
 	jQuery('.owl-carousel').owlCarousel({
 		loop: true,
 		margin: 10,
@@ -130,6 +151,10 @@ jQuery(document).ready(function() {
   document.getElementById("defaultOpen").removeAttribute('id');
 });
 
+
+jQuery(window).on('resize', function(){
+  coolFunctions();
+});
 
 function openTab(evt, tabName) {
     // Declare all variables

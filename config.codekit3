@@ -650,57 +650,81 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/gisa-scripts-min.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/js\/gisa-scripts-min.js.map",
+		"oF": 0
+		},
 	"\/js\/gisa-scripts.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/gisa-scripts-min.js",
-		"oF": 0,
-		"sC": 1,
+		"oF": 1,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/js\/jquery-3.1.1.min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/jquery-3.1.1.min-min.js",
+		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/jquery.sticky-kit.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/js\/jquery.sticky-kit.min-min.js",
+		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/menuspy-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/menuspy-min-min.js",
 		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/menuspy.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/js\/menuspy-min.js",
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/owl.carousel.min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/owl.carousel.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/pace.min-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/pace.min-min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/pace.min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/pace.min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/sg-scripts.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/sg-scripts-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},

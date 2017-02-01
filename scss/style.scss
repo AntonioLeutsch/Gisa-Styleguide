@@ -9,6 +9,11 @@ body {
     color: $schwarz;
 }
 
+body,
+html {
+    overflow-x: hidden;
+}
+
 audio,
 img,
 svg,
@@ -55,8 +60,6 @@ video {
     &:hover:after {
         opacity: 1;
     }
-
-    .gisa-color-swatch {}
 
     .gisa-color-name {
         padding-right: 0.5rem;
@@ -409,9 +412,8 @@ ul.tab {
     li {
         float: left;
         flex: 0 0 50%;
-
         @media (max-width: 760px) {
-          flex: 0 0 100%;
+            flex: 0 0 100%;
         }
 
         a {
@@ -430,9 +432,9 @@ ul.tab {
                 color: $blau;
             }
 
+            &.active,
             &:active,
-            &:focus,
-            &.active {
+            &:focus {
                 color: $blau;
             }
         }
@@ -447,9 +449,74 @@ ul.tab {
     animation: fadeEffect 1s;
     font-weight: 300;
     @include lineHeight(33px);
+    margin-bottom: 5rem;
 }
-
 @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* Sticky Sidebar */
+#scroll {
+    transition: all ease 0.3s;
+
+    &.is_stuck {
+        margin-top: 1.5rem;
+    }
+}
+/* Menu Spy */
+.gisa-nav-group {
+    @media (min-width: 1024px) {
+        .current-item {
+            a {
+                color: white;
+                border-left: 2px solid #34495e;
+                background: #22303e;
+            }
+        }
+    }
+}
+/* Accordion */
+.accordion {
+    dt {
+        display: block;
+        width: 100%;
+        background: white;
+        color: $grau;
+        padding: 1rem;
+        cursor: pointer;
+        float: none;
+        @include fontSize(28px);
+        letter-spacing: 1px;
+        font-weight: 300;
+        line-height: normal;
+
+        &.active,
+        &:hover {
+            color: $blau;
+        }
+    }
+
+    dd {
+        margin: 0;
+        padding: 0.5rem 1rem;
+        border: 0;
+        display: none;
+        @include fontSize(18px);
+        @include lineHeight(32px);
+        font-weight: 300;
+
+        p {
+            margin: 0;
+            padding-left: 2.25rem;
+        }
+
+        .active {
+            display: block;
+        }
+    }
 }
