@@ -124,8 +124,8 @@ $(function() {
     var oTop = $('.timer').offset().top - window.innerHeight;
     $(window).scroll(function(){
 
-        var pTop = $('body').scrollTop();
-        //console.log( pTop + ' - ' + oTop );   //just for your debugging
+        var pTop = $(window).scrollTop();
+        console.log( pTop + ' - ' + oTop );   //just for your debugging
         if( pTop > oTop  && X != false){
             counter();
             X = false;
