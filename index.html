@@ -23,12 +23,14 @@
 
     <!-- prism Syntax Highlighting Styles -->
     <link rel="stylesheet" href="vendor/prism/prism.css">
+    <link rel="stylesheet" href="node_modules/gutenberg-css/dist/gutenberg.css" media="print">
+    <link rel="stylesheet" href="node_modules/gutenberg-css/dist/themes/modern.min.css" media="print"> <!-- optional -->
 </head>
 
 <body>
     <a href="#main" class="gisa-visually-hidden gisa-visually-hidden-focusable">Zum Content</a>
 
-    <div id="top" class="gisa-header" role="banner">
+    <div id="top" class="gisa-header no-print" role="banner">
         <div class="gisa-container">
             <h1 class="gisa-logo">
         <span class="gisa-logo-initials">GISA</span>
@@ -103,22 +105,22 @@
                         <h2 id="gisa-colors" class="gisa-h2">Farben</h2>
                         <div class="gisa-color-grid">
                             <div class="gisa-color">
-                                <div class="gisa-color-swatch" style="background-color: #003399;"></div>
+                                <div class="gisa-color-swatch" style="background-color: #003399 !important;"></div>
                                 <div class="gisa-color-name">GISA Blau</div>
                                 <div class="gisa-color-value">#003399</div>
                             </div>
                             <div class="gisa-color">
-                                <div class="gisa-color-swatch" style="background-color: #81ADDF;"></div>
+                                <div class="gisa-color-swatch" style="background-color: #81ADDF !important;"></div>
                                 <div class="gisa-color-name">GSIA Hellblau</div>
                                 <div class="gisa-color-value">#81ADDF</div>
                             </div>
                             <div class="gisa-color">
-                                <div class="gisa-color-swatch" style="background-color: #FF0000;"></div>
+                                <div class="gisa-color-swatch" style="background-color: #FF0000 !important;"></div>
                                 <div class="gisa-color-name">GISA Rot</div>
                                 <div class="gisa-color-value">#FF0000</div>
                             </div>
                             <div class="gisa-color">
-                                <div class="gisa-color-swatch" style="background-color: #707173;"></div>
+                                <div class="gisa-color-swatch" style="background-color: #707173 !important;"></div>
                                 <div class="gisa-color-name">Schwarz 70%</div>
                                 <div class="gisa-color-value">#707173</div>
                             </div>
@@ -126,7 +128,7 @@
                         <!--/.gisa-color-grid-->
                         <div class="gisa-color-grid">
                             <div class="gisa-color">
-                                <div class="gisa-color-swatch" style="background-color: #3E3D40;"></div>
+                                <div class="gisa-color-swatch" style="background-color: #3E3D40 !important;"></div>
                                 <div class="gisa-color-name">Schwarz 90%</div>
                                 <div class="gisa-color-value">#3E3D40</div>
                             </div>
@@ -140,7 +142,7 @@
                         <h2 id="gisa-fontStacks" class="gisa-h2">Font</h2>
                         <div class="rev-wrapper">
                             <p class="left">Die Leichtigkeit und Vielfältigkeit der Schnitte machte die Font 'Roboto' für die Gisa prädestiniert.</p>
-                            <a class="gisa-btn right" href="https://fonts.google.com/specimen/Roboto" target="_blank">Roboto downloaden</a>
+                            <a class="gisa-btn right no-print" href="https://fonts.google.com/specimen/Roboto" target="_blank">Roboto downloaden</a>
                         </div>
 
                         <dl class="gisa-font-list">
@@ -153,11 +155,11 @@
                             <dt>Primary Font Bold:</dt>
                             <dd style='font-family: "Roboto", sans-serif; font-weight: 500;'>'Roboto', sans-serif;</dd>
                         </dl>
-                        <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
+                        <div class="gisa-markup-controls"><a class="gisa-btn--top no-print" href="#top">Back to Top</a></div>
                     </div>
                     <!--/.gisa-font-stacks-->
                     <!-- Manually add your fonts here. -->
-                    <div class="gisa-font-stacks gisa-section">
+                    <div class="gisa-font-stacks gisa-section page-break-after">
                         <h2 id="gisa-headlineStacks" class="gisa-h2">Headlines</h2>
                         <div class="rev-wrapper">
                             <p>
@@ -179,7 +181,7 @@
                             <dd class="blocks s-gisa-h6">Beispiel Text einer Headline.</dd>
 
                         </dl>
-                        <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
+                        <div class="gisa-markup-controls"><a class="gisa-btn--top no-print" href="#top">Back to Top</a></div>
                     </div>
                     <!--/.gisa-font-stacks-->
 
@@ -216,7 +218,7 @@
                             </dd>
 
                         </dl>
-                        <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
+                        <div class="gisa-markup-controls"><a class="gisa-btn--top no-print" href="#top">Back to Top</a></div>
                     </div>
                     <!--/.gisa-font-stacks-->
 
@@ -235,11 +237,11 @@
                             <dd class="blocks"><img class="responsive rounded" src="images/image.jpg" /></dd>
 
                         </dl>
-                        <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
+                        <div class="gisa-markup-controls"><a class="gisa-btn--top no-print" href="#top">Back to Top</a></div>
                     </div>
                     <!--/.gisa-font-stacks-->
 
-                    <div class="gisa-font-stacks gisa-section">
+                    <div class="gisa-font-stacks gisa-section no-print">
                         <h2 id="gisa-sliderStack" class="gisa-h2">Slider</h2>
                         <div class="rev-wrapper">
                             <p>
@@ -262,7 +264,7 @@
                                 </div>
                             </dd>
                         </dl>
-                        <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
+                        <div class="gisa-markup-controls"><a class="gisa-btn--top no-print" href="#top">Back to Top</a></div>
                     </div>
                     <!--/.gisa-font-stacks-->
 
@@ -307,11 +309,11 @@
                                 </div>
                             </dd>
                         </dl>
-                        <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
+                        <div class="gisa-markup-controls"><a class="gisa-btn--top no-print" href="#top">Back to Top</a></div>
                     </div>
                     <!--/.gisa-font-stacks-->
 
-                    <div class="gisa-font-stacks gisa-section">
+                    <div class="gisa-font-stacks gisa-section page-break-after">
                         <h2 id="gisa-accStack" class="gisa-h2">Accordion</h2>
                         <div class="rev-wrapper">
                             <p>
@@ -352,7 +354,7 @@
                                 </dl>
                             </dd>
                         </dl>
-                        <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
+                        <div class="gisa-markup-controls"><a class="gisa-btn--top no-print" href="#top">Back to Top</a></div>
                     </div>
                     <!--/.gisa-font-stacks-->
 
@@ -457,7 +459,7 @@
                                 </ul>
                             </dd>
                         </dl>
-                        <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
+                        <div class="gisa-markup-controls"><a class="gisa-btn--top no-print" href="#top">Back to Top</a></div>
                     </div>
                     <!--/.gisa-font-stacks-->
                     <div class="gisa-font-stacks gisa-section countit">
@@ -476,10 +478,10 @@
                                 </blockquote>
                             </dd>
                         </dl>
-                        <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
+                        <div class="gisa-markup-controls"><a class="gisa-btn--top no-print" href="#top">Back to Top</a></div>
                     </div>
                     <!--/.gisa-font-stacks-->
-                    <div class="gisa-font-stacks gisa-section countit">
+                    <div class="gisa-font-stacks gisa-section countit page-break-after">
                         <h2 id="gisa-iconwTextStack" class="gisa-h2">Icon mit Text</h2>
                         <div class="rev-wrapper">
                             <p>
@@ -500,7 +502,7 @@
 
                             </dd>
                         </dl>
-                        <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
+                        <div class="gisa-markup-controls"><a class="gisa-btn--top no-print" href="#top">Back to Top</a></div>
                     </div>
                     <!--/.gisa-font-stacks-->
                     <div class="gisa-font-stacks gisa-section countit">
@@ -531,7 +533,7 @@
                                 </div>
                             </dd>
                         </dl>
-                        <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
+                        <div class="gisa-markup-controls"><a class="gisa-btn--top no-print" href="#top">Back to Top</a></div>
                     </div>
                     <!--/.gisa-font-stacks-->
                     <div class="gisa-font-stacks gisa-section countit">
@@ -567,7 +569,7 @@
                               </ul>
                             </dd>
                         </dl>
-                        <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
+                        <div class="gisa-markup-controls"><a class="gisa-btn--top no-print" href="#top">Back to Top</a></div>
                     </div>
                     <!--/.gisa-font-stacks-->
                     <div class="gisa-font-stacks gisa-section countit">
@@ -597,7 +599,7 @@
                               </div>
                             </dd>
                         </dl>
-                        <div class="gisa-markup-controls"><a class="gisa-btn--top" href="#top">Back to Top</a></div>
+                        <div class="gisa-markup-controls"><a class="gisa-btn--top no-print" href="#top">Back to Top</a></div>
                     </div>
                     <!--/.gisa-font-stacks-->
 

@@ -1,0 +1,22 @@
+{
+  "name": "gisastyleguide",
+  "version": "1.0.0",
+  "description": "A Style Guide created for the new Website.",
+  "main": "index.html",
+  "scripts": {
+    "test": "testit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonioLeutsch/Gisa-Styleguide.git"
+  },
+  "author": "anl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonioLeutsch/Gisa-Styleguide/issues"
+  },
+  "homepage": "https://github.com/AntonioLeutsch/Gisa-Styleguide#readme",
+  "devDependencies": {
+    "gutenberg-css": "^0.4.1"
+  }
+}

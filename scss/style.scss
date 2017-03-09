@@ -7,6 +7,8 @@
 body {
     font-family: $sans-serif;
     color: $schwarz;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
 }
 
 body,
@@ -45,12 +47,12 @@ video {
 
     &:before {
         opacity: 1;
-        box-shadow: $card-shadow;
+        box-shadow: $card-shadow !important;
     }
 
     &:after {
         opacity: 0;
-        box-shadow: $card-shadow-h;
+        box-shadow: $card-shadow-h !important;
     }
 
     &:hover:before {
@@ -159,7 +161,7 @@ video {
 ---------------------------------------------------------------------------- */
 .gisa-btn--top {
     text-decoration: none;
-    color: $blau;
+    color: $blau !important;
 
     &:hover {
         text-decoration: underline;
@@ -198,6 +200,7 @@ video {
     font-style: normal;
     @include fontSize(44px);
     @include lineHeight(66px);
+  text-align: left;
 }
 
 .s-gisa-h2 {
@@ -282,7 +285,7 @@ video {
         height: 1px;
         content: '';
         transform: translateY(-50%);
-        background: $grau;
+        background: $grau !important;
     }
 
     .separator_wrapper {
@@ -526,7 +529,7 @@ ul.tab {
 }
 
 .background {
-    background-image: url('../images/bg.jpg');
+    background-image: url('../images/bg.jpg') !important;
     background-size: cover;
 
     .counters {
@@ -610,7 +613,7 @@ blockquote {
         line-height: 5rem;
         text-align: center;
         border-radius: 100%;
-        background-color: $blau;
+        background-color: $blau !important;
     }
 
     .title {
@@ -636,7 +639,7 @@ blockquote {
             position: absolute;
             bottom: 0;
             left: 0;
-            background: $blau;
+            background: $blau !important;
             transition: all 0.3s ease;
             opacity: 0;
             pointer-events: none;
@@ -683,7 +686,7 @@ blockquote {
 
     .position {
         @include fontSize(14px);
-        color: $blau;
+        color: $blau !important;
         @include lineHeight(22px);
         font-weight: 400;
         font-style: italic;
@@ -702,8 +705,8 @@ blockquote {
     }
 
     .service-title {
-        background: $blau;
-        color: white;
+        background: $blau !important;
+        color: white !important;
         padding: 1rem 0;
         font-weight: 100;
         letter-spacing: 0.05em;
@@ -724,7 +727,7 @@ blockquote {
             margin: 0 auto;
 
             li {
-                border-bottom: 2px solid $blau;
+                border-bottom: 2px solid $blau !important;
                 padding: 1rem 0;
                 font-weight: 300;
 
@@ -746,6 +749,8 @@ blockquote {
         @include fontSize(18px);
         font-weight: 600;
         transition: all ease 0.3s;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
 
         &:active,
         &:focus {
@@ -753,20 +758,20 @@ blockquote {
         }
 
         &.white {
-            background: white;
-            color: $blau;
-            border-color: white;
+            background: white !important;
+            color: $blau !important;
+            border-color: white !important;
 
             &:hover {
-                background: $blau;
-                color: white;
-                border-color: $blau;
+                background: $blau !important;
+                color: white !important;
+                border-color: $blau !important;
             }
         }
     }
 
     .cta {
-        background: $hellbau;
+        background: $hellbau !important;
         display: block;
         width: 100%;
         padding: 2rem;

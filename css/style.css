@@ -284,15 +284,15 @@ body {
   border: none;
   border: 2px solid #003399;
   border-radius: 4px;
-  background: #003399;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.16);
+  background: #003399 !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.16) !important;
   font-size: 16px;
   /* For older browsers */
   font-size: 1rem; }
   .gisa-btn:hover {
-    border-color: #002a80;
-    background: #002a80; }
+    border-color: #002a80 !important;
+    background: #002a80 !important; }
   .gisa-btn:focus {
     outline: 0; }
 
@@ -1598,7 +1598,9 @@ you can use the generic selector below, but it's slower:
 
 body {
   font-family: "Roboto", "HelveticaNeue", "Helvetica", Arial, sans-serif;
-  color: #3E3D40; }
+  color: #3E3D40;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact; }
 
 body,
 html {
@@ -1631,10 +1633,10 @@ video {
     will-change: opacity; }
   .gisa-color:before {
     opacity: 1;
-    box-shadow: 0 1px 2px rgba(19, 10, 51, 0.2); }
+    box-shadow: 0 1px 2px rgba(19, 10, 51, 0.2) !important; }
   .gisa-color:after {
     opacity: 0;
-    box-shadow: 0 4px 16px rgba(39, 21, 102, 0.25); }
+    box-shadow: 0 4px 16px rgba(39, 21, 102, 0.25) !important; }
   .gisa-color:hover:before {
     opacity: 0; }
   .gisa-color:hover:after {
@@ -1720,7 +1722,7 @@ video {
 ---------------------------------------------------------------------------- */
 .gisa-btn--top {
   text-decoration: none;
-  color: #003399; }
+  color: #003399 !important; }
   .gisa-btn--top:hover {
     text-decoration: underline; }
 
@@ -1748,7 +1750,8 @@ video {
   font-size: 44px;
   font-size: 2.75rem;
   line-height: 66px;
-  line-height: 4.125rem; }
+  line-height: 4.125rem;
+  text-align: left; }
 
 .s-gisa-h2 {
   text-transform: none;
@@ -1827,7 +1830,7 @@ video {
   height: 1px;
   content: '';
   transform: translateY(-50%);
-  background: #707173; }
+  background: #707173 !important; }
 .seperators .separator_wrapper {
   position: relative;
   left: 50%;
@@ -2018,7 +2021,7 @@ ul.tab {
   margin-bottom: 1rem; }
 
 .background {
-  background-image: url("../images/bg.jpg");
+  background-image: url("../images/bg.jpg") !important;
   background-size: cover; }
   .background .counters {
     color: white;
@@ -2095,7 +2098,7 @@ blockquote {
     line-height: 5rem;
     text-align: center;
     border-radius: 100%;
-    background-color: #003399; }
+    background-color: #003399 !important; }
   .icon_text_holder .title {
     display: table-cell;
     padding-left: 1rem;
@@ -2114,7 +2117,7 @@ blockquote {
     position: absolute;
     bottom: 0;
     left: 0;
-    background: #003399;
+    background: #003399 !important;
     transition: all 0.3s ease;
     opacity: 0;
     pointer-events: none;
@@ -2153,7 +2156,7 @@ blockquote {
 .mitarbeiter .position {
   font-size: 14px;
   font-size: 0.875rem;
-  color: #003399;
+  color: #003399 !important;
   line-height: 22px;
   line-height: 1.375rem;
   font-weight: 400;
@@ -2171,8 +2174,8 @@ blockquote {
       width: 100%;
       max-width: 450px; } }
   .service-table .service-title {
-    background: #003399;
-    color: white;
+    background: #003399 !important;
+    color: white !important;
     padding: 1rem 0;
     font-weight: 100;
     letter-spacing: 0.05em;
@@ -2189,7 +2192,7 @@ blockquote {
     width: 75%;
     margin: 0 auto; }
     .service-table .service-content ul li {
-      border-bottom: 2px solid #003399;
+      border-bottom: 2px solid #003399 !important;
       padding: 1rem 0;
       font-weight: 300; }
       .service-table .service-content ul li:first-of-type {
@@ -2203,19 +2206,21 @@ blockquote {
   font-size: 18px;
   font-size: 1.125rem;
   font-weight: 600;
-  transition: all ease 0.3s; }
+  transition: all ease 0.3s;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact; }
   .buttons .gisa-btn:active, .buttons .gisa-btn:focus {
     outline: 0; }
   .buttons .gisa-btn.white {
-    background: white;
-    color: #003399;
-    border-color: white; }
+    background: white !important;
+    color: #003399 !important;
+    border-color: white !important; }
     .buttons .gisa-btn.white:hover {
-      background: #003399;
-      color: white;
-      border-color: #003399; }
+      background: #003399 !important;
+      color: white !important;
+      border-color: #003399 !important; }
 .buttons .cta {
-  background: #81ADDF;
+  background: #81ADDF !important;
   display: block;
   width: 100%;
   padding: 2rem;

@@ -365,17 +365,17 @@ body {
     border: none;
     border: 2px solid $blau;
     border-radius: 4px;
-    background: $blau;
-    box-shadow: $btn-shadow;
-    text-shadow: $text-shadow;
+    background: $blau !important;
+    box-shadow: $btn-shadow !important;
+    text-shadow: $text-shadow !important;
 
     font-size: 16px;
     /* For older browsers */
     font-size: 1rem;
 
     &:hover {
-        border-color: #002a80;
-        background: #002a80;
+        border-color: #002a80 !important;
+        background: #002a80 !important;
     }
 
     &:focus {
